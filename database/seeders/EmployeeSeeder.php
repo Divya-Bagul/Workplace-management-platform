@@ -25,7 +25,7 @@ class EmployeeSeeder extends Seeder
             ['employee_code' => 'EMP-MGR-001'],
             [
                 'name' => 'Priya Sharma',
-                'email' => 'priya.sharma@zytix.local',
+                'email' => 'priya.sharma@zylitix.local',
                 'department_id' => $engineering?->id,
                 'designation' => 'Engineering Manager',
                 'joining_date' => '2020-01-15',
@@ -39,14 +39,14 @@ class EmployeeSeeder extends Seeder
             [
                 'employee_code' => 'EMP-REP-001',
                 'name' => 'Divya Bagul',
-                'email' => 'divya.bagul@zytix.local',
+                'email' => 'divya.bagul@zylitix.local',
                 'designation' => 'Software Engineer',
                 'joining_date' => '2025-06-01',
             ],
             [
                 'employee_code' => 'EMP-REP-002',
                 'name' => 'Arjun Mehta',
-                'email' => 'arjun.mehta@zytix.local',
+                'email' => 'arjun.mehta@zylitix.local',
                 'designation' => 'QA Engineer',
                 'joining_date' => '2025-07-01',
             ],

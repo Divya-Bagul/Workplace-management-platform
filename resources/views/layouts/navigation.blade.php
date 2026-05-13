@@ -14,7 +14,7 @@
 
             <a href="{{ route('dashboard') }}" class="hidden items-center gap-2 lg:flex">
                 <x-application-logo class="block h-8 w-auto fill-current text-gray-800" />
-                <span class="text-sm font-semibold text-gray-900">{{ config('app.name', 'Zytix') }}</span>
+                <span class="text-sm font-semibold text-gray-900">{{ config('app.name', 'zylitix') }}</span>
             </a>
         </div>
 

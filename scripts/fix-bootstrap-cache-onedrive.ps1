@@ -5,7 +5,7 @@
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $cacheLink = Join-Path $projectRoot 'bootstrap\cache'
-$cacheTarget = Join-Path $env:LOCALAPPDATA 'zytix-bootstrap-cache'
+$cacheTarget = Join-Path $env:LOCALAPPDATA 'zylitix-bootstrap-cache'
 
 Write-Host "Project: $projectRoot"
 Write-Host "Cache target: $cacheTarget"

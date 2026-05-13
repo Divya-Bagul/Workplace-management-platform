@@ -16,19 +16,19 @@ class RoleSeeder extends Seeder
         $itRole = Role::query()->firstOrCreate(['name' => 'it', 'guard_name' => 'web']);
 
         $admin = User::query()->firstOrCreate(
-            ['email' => 'admin@zytix.local'],
+            ['email' => 'admin@zylitix.local'],
             ['name' => 'Platform Admin', 'password' => Hash::make('password')]
         );
         $admin->syncRoles([$adminRole]);
 
         $hr = User::query()->firstOrCreate(
-            ['email' => 'hr@zytix.local'],
+            ['email' => 'hr@zylitix.local'],
             ['name' => 'HR User', 'password' => Hash::make('password')]
         );
         $hr->syncRoles([$hrRole]);
 
         $it = User::query()->firstOrCreate(
-            ['email' => 'it@zytix.local'],
+            ['email' => 'it@zylitix.local'],
             ['name' => 'IT User', 'password' => Hash::make('password')]
         );
         $it->syncRoles([$itRole]);
