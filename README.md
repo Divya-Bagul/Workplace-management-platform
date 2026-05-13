@@ -1,6 +1,5 @@
-# Zytix Workplace
 
-Zytix is a workplace operations platform for HR, IT, and facilities teams. It connects employee records, onboarding and offboarding workflows, IT asset assignments, and desk allocation in one Laravel application with role-based access, in-app notifications, and a REST API.
+Workplace operations platform for HR, IT, and facilities teams. It connects employee records, onboarding and offboarding workflows, IT asset assignments, and desk allocation in one Laravel application with role-based access, in-app notifications, and a REST API.
 
 ## Modules
 
@@ -82,7 +81,7 @@ php artisan key:generate
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=zytix
+DB_DATABASE=Test
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -115,10 +114,9 @@ After `php artisan migrate --seed`, these accounts are available. Change passwor
 
 | Role | Email | Password |
 | --- | --- | --- |
-| Admin | `admin@zytix.local` | `password` |
-| HR | `hr@zytix.local` | `password` |
-| IT | `it@zytix.local` | `password` |
-
+| Admin | `admin@zylitix.local` | `password` |
+| HR | `hr@zylitix.local` | `password` |
+zylitix
 Seeders also create departments, asset types, a Headquarters building with Ground and Level 1 floors, sample desks, and sample employees with a reporting-manager hierarchy.
 
 ## Common workflows
