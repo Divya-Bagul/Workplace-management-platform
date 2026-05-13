@@ -1,5 +1,6 @@
+# Zylitix Workplace
 
-Workplace operations platform for HR, IT, and facilities teams. It connects employee records, onboarding and offboarding workflows, IT asset assignments, and desk allocation in one Laravel application with role-based access, in-app notifications, and a REST API.
+Zylitix is a workplace operations platform for HR, IT, and facilities teams. It connects employee records, onboarding and offboarding workflows, IT asset assignments, and desk allocation in one Laravel application with role-based access, in-app notifications, and a REST API.
 
 ## Modules
 
@@ -116,7 +117,8 @@ After `php artisan migrate --seed`, these accounts are available. Change passwor
 | --- | --- | --- |
 | Admin | `admin@zylitix.local` | `password` |
 | HR | `hr@zylitix.local` | `password` |
-zylitix
+| IT | `it@zylitix.local` | `password` |
+
 Seeders also create departments, asset types, a Headquarters building with Ground and Level 1 floors, sample desks, and sample employees with a reporting-manager hierarchy.
 
 ## Common workflows

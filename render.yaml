@@ -1,0 +1,48 @@
+# Render Blueprint for Zylitix Workplace (free tier).
+# Connect the repo in the Render dashboard, then apply this Blueprint.
+# After the first deploy, run `php artisan db:seed --force` from the Render shell if you want demo users.
+
+databases:
+  - name: zylitix-db
+    plan: free
+    databaseName: zylitix
+    user: zylitix
+
+services:
+  - type: web
+    name: zylitix
+    runtime: docker
+    plan: free
+    healthCheckPath: /login
+    autoDeploy: true
+    envVars:
+      - key: APP_NAME
+        value: Zylitix Workplace
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: LOG_LEVEL
+        value: info
+      - key: DATABASE_URL
+        fromDatabase:
+          name: zylitix-db
+          property: connectionString
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: CACHE_DRIVER
+        value: file
+      - key: SESSION_DRIVER
+        value: cookie
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: MAIL_MAILER
+        value: log
+      - key: BROADCAST_DRIVER
+        value: log
+      - key: FILESYSTEM_DISK
+        value: local
